@@ -1,9 +1,6 @@
 var mapa = L.map('mapa').setView([0.18,-72.90],6);
-L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-                subdomains: 'abcd',
-                maxZoom: 19
- }).addTo(map);
+var osmLayer = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution: 'Jonathan'}).addTo(mapa);
+mapa.addLayer(osmLayer);
 $.getJSON("https://jpanimboza.github.io/OPTE/tesis_2012.geojson",
 function(data){
 var clusteredPoints = L.markerClusterGroup();
