@@ -1,0 +1,17 @@
+.parrafo {
+  width: 35em;
+  text-align: justify;
+}
+.opte {
+  width: 15em;
+  border: 5px solid #0F73AC;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-color: #0FAC7A;
+  color: #AC440F;
+  border-radius: 10%;
+}
+#mapa{
+  width:70%; 
+  height:450px
+}
